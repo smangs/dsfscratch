@@ -22,6 +22,17 @@ class TestVectors(unittest.TestCase):
         result = vectors.subtract(v1, v2)
         self.assertEqual(result, [1, 2, 3])
 
+    def test_vector_sum(self):
+        """
+        Test that it can multiply vectors
+        """
+        v1 = [1, 2]
+        v2 = [3, 4]
+        v3 = [5, 6]
+        v4 = [7, 8]
+        result = vectors.vector_sum([v1, v2, v3, v4])
+        self.assertEqual(result, [16, 20])
+
 
 if __name__ == '__main__':
     unittest.main()
